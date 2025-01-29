@@ -38,7 +38,7 @@ const Navbar = () => {
             <li>
               <a href='http://localhost:3000/ContactMe' className='menu-item'>Contact Me</a>
             </li>
-            <a href="/radhey-patil-resume.pdf" download="Radhey_Patil_Resume.pdf" >
+            <a href="/radhey%20patil%20resume.pdf" download="Radhey_Patil_Resume.pdf" >
               <button className='Download-CV-btn' onClick={() => { }}>Download CV</button>
             </a>
           </ul>
