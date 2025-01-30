@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 const ContactForm = () => {
   const form = useRef();
 
+  console.log(process.env.REACT_APP_SERVICE_ID);
     
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,7 +17,7 @@ const ContactForm = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_PUBLICKEY
+        process.env.REACT_APP_DATA
       )
       .then(
         () => {
